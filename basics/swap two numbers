@@ -1,0 +1,14 @@
+public class Main {
+    public static void main(String args[]){ 
+        int a = 9, b =10; 
+        System.out.println("Value of 'a' before swap: "+a);
+        System.out.println("Value of 'b' before swap: "+b);
+        
+        int temp = a; 
+        a = b; 
+        b = temp;
+        
+        System.out.println("Value of 'a' after swap: "+a);
+        System.out.println("Value of 'a' after swap: "+b);
+    }
+}
