@@ -1,0 +1,18 @@
+class Friend{
+    String name;
+    static int noOfFriends;
+    
+    Friend (String name){
+        this.name = name;
+        noOfFriends++;
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        Friend fr1 = new Friend("Alex");
+        Friend fr2 = new Friend("Max");
+        
+        System.out.println(Friend.noOfFriends);
+    }
+}
