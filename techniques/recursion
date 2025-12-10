@@ -1,1 +1,19 @@
+class Main{
+    static void printNos(int n){
+        if(n>15) return;
+        
+        System.out.print(n+" ");
+        printNos(n+1);
+    }
+    
+    public static void main(String args[]){
+        printNos(1);
+    }
+}
+
+//we used 'static' for printNos because only a static method can be called only by another static method; main() is static
+
+//we used 'void' even though its giving an output because its printing nos != returning nos
+
+//() is used to call methods, not for classes, hence we begin with Main{} but continue with printNos()
 
