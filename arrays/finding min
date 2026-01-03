@@ -1,6 +1,6 @@
 class program1{
     public static void main(String args[]){
-        int[] arr = {1,2,3,4,5};
+        int[] arr = {1,2,3,4,6};
 
         int i=1; 
         int min= arr[0];
