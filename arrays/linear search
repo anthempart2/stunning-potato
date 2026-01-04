@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class program1{
+    public static void main(String args[]){
+        int[] arr = {1,2,3,4,5};
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter number to search: ");
+        int num = sc.nextInt();
+        int ans = -1;
+        int i=0;
+
+        while(i<arr.length){
+            if(arr[i] == num){
+                ans = i;
+                break;
+            }
+            i++;
+        }
+        /*for(int k=0; k<arr.length;k++){
+            System.out.print(arr[k]+" ");
+        }*/
+        
+        if(ans == -1){
+            System.out.println("Invalid search!");
+        }
+        else{
+            System.out.println("Present at id: "+ans);
+        }
+    }
+}
