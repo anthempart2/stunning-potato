@@ -1,0 +1,40 @@
+/*Binary search is a search technique to find an element in a sorted array
+  by repeatedly cutting the search space in half.
+
+  check middle, decide right or left, repeat
+
+  Works only on sorted arrays
+*/
+
+import java.util.Scanner;
+class program1{
+    public static void main(String args[]){
+        int[] arr = {1,2,3,4,5};
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter number to search: ");
+        int num = sc.nextInt();
+
+        int i=0;
+        int n = arr.length;
+        int ans = -1;
+
+        while(i<=n){
+            int mid = (i+n)/2;
+
+            if(arr[mid] == num){
+                ans = mid;
+                break;
+            }
+            else if(num<arr[mid]){
+                n = mid-1;
+            }
+            else{
+                i = mid+1;
+            }
+        }
+
+        if(ans== -1){System.out.println("Invalid!");}
+        else{System.out.println("found at index: "+ans);}
+    }
+}
