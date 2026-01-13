@@ -1,0 +1,43 @@
+constructor: special member that is called when an object is created
+
+used to set default or user-defined values for object attributes
+
+> default
+* constructor has no parameters
+* if no constructor is explicitly defined then java provides by default
+* code
+class A {
+
+    //default
+    A(){
+        System.out.println("default!");
+    }
+    public static void main(String[] args){
+        A a = new A();
+    }
+}
+
+> parameterized
+* constructor with parameters
+* used when we wish to initialize the fields of class with our own values
+* code
+class B{
+    String name;
+    int id;
+
+    B(String name, int id){
+        this.name = name;
+        this.id = id;
+    }
+    public static void main(String[] args) {
+        B b = new B("Adams", 53);
+    }
+}
+
+> private
+* code
+public class PrivateConstructorClass{
+    private PrivateConstructorClass(){
+        
+    }
+}
