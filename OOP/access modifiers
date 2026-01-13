@@ -1,1 +1,33 @@
+Access modifiers are essential tools that define how the 
+members of a class, like variables, methods, and even the 
+class itself, can be accessed from other parts of our program.
+
+> private
+* code
+class Person{
+    private String name;
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public String getName(){
+        return name;
+    }
+}
+
+public class program2{
+    public static void main(String[] args) {
+        Person p = new Person();
+        //p.setName("Rishi");
+
+        System.out.println(p.getName());
+    }
+}
+
+> public
+
+> protected
+
+> default
 
