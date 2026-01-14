@@ -1,0 +1,29 @@
+//method overloading- same method name, different parameters
+
+class A{
+    void show(){}
+
+    void show(int x){}
+
+    void show(int x, int y){}
+}
+
+/*
+    Method over riding happens when- 
+    * inheritance is present (parent -> child)
+    * child class provides its own implementation
+    * method name and parameters are exactly the same
+*/
+
+class Parent{
+    void speak(){
+        System.out.println("Parent speaks");
+    }
+}
+
+class Child extends Parent{
+    @Override
+    void speak(){
+        System.out.println("Child speaking");
+    }
+}
