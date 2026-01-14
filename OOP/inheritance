@@ -1,0 +1,30 @@
+/*
+    * possible to inherit attributes and methods from one class to another
+    * to inherit a class, we use the 'extends' keyword
+    * subclass vs superclass
+*/
+
+class Vehicle{
+    protected String brand = "Ford";    // vehicle Attribute
+    public void Honk(){                 // vehicle method
+        System.out.println("Bang!");
+    }
+}
+
+class Car extends Vehicle{
+    private String modelName = "Mustang"; // car attribute
+
+    public static void main(String[] args) {
+        Car myCar = new Car();
+        myCar.Honk();
+    }
+}
+
+// if we don't wish other classes to inherit from a class, we use a 'final' keyword
+final class Vehicles{
+    //...
+}
+
+class Cars extends Vehicles{
+    // throws error
+}
