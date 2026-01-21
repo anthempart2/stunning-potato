@@ -1,0 +1,8 @@
+#1 WAP to store a number in a variable, print if its odd or even
+#2 WAP to store a number in a variable, print if its greater than, lesser than or equal to Zero
+#3 WAP to store age as a number, print if the person is eligible to vote, if the age is greater than 18
+#4 WAP to print the larger of two numbers, print 'OK' if the numbers are equal
+#5 WAP to check if the password is strong or weak, if the length of password is > 8 then strong else weak
+#6 WAP to store two boolean values,  print 'Access granted!' if both are true, otherwise deny
+#7 WAP to store two strings, print 'Same!' if they are exactly equal (same value and type)
+#8 WAP to store any value in a variable, print 'Truthy' if it is, else 'Falsy'
