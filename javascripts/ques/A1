@@ -1,0 +1,9 @@
+//printing if no is odd or even
+let m = 23;
+if(m%2 == 0){
+    console.log("Even")
+}
+else{
+    console.log("Odd")
+}
+//console.log(typeof me)
