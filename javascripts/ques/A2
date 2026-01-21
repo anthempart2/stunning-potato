@@ -1,0 +1,12 @@
+//printing if no is >, <, = to Zero
+let m = 23;
+if( m> 0){
+    console.log("Greater")
+}
+else if (m<0){
+    console.log("Lesser")
+}
+else{
+    console.log("Equals Zero")
+}
+//console.log(typeof me)
