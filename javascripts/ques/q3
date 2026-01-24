@@ -1,0 +1,12 @@
+#Question
+Write an arrow function called multiply that:
+> Takes two numbers
+> Returns their product
+> Must be written using =>
+
+#Code
+const multiply = (a,b) => {
+    return a*b;
+};
+
+console.log(multiply(3,4));
