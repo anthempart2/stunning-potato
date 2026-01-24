@@ -1,0 +1,10 @@
+#Question
+Write a function once(fn) such that:
+
+> It takes one function as an argument
+> It returns a new function
+
+The returned function:
+> Calls fn only the first time
+> On later calls, it should not call fn again
+> It should return the result from the first call every time
