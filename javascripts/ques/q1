@@ -1,0 +1,17 @@
+#Question
+Write a JavaScript function counter() such that:
+Every time you call counter(), it returns a function
+The returned function, when called:
+
+> Increments an internal count by 1
+> Returns the updated count
+> The count must not be accessible directly from outside
+
+#Code
+const x = counter();
+const r;
+counter(){
+    r = r+1;
+    return r;
+}
+console.log(x());
