@@ -8,3 +8,17 @@ The returned function:
 > Calls fn only the first time
 > On later calls, it should not call fn again
 > It should return the result from the first call every time
+
+#Code
+function once(fn){
+    let called= false;
+    let result;
+    
+    return function(){
+        if(!called){
+            return fn();
+            called = true;
+        }
+        return result;
+    };
+}
