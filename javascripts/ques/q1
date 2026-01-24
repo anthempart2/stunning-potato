@@ -8,10 +8,15 @@ The returned function, when called:
 > The count must not be accessible directly from outside
 
 #Code
-const x = counter();
-const r;
-counter(){
-    r = r+1;
-    return r;
+function counter() {
+    let r = 0;
+    
+    return function() {
+        r = r+1;
+        return r;
+    }
 }
+
+const x = counter();
+console.log(x());
 console.log(x());
